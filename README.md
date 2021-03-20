@@ -27,16 +27,14 @@
 <!-- PROJECT LOGO -->
 <br />
 <p align="center">
-  <a href="https://github.com/GauravPoosarla/heavyTeam/">
-    <img src="images/logo.png" alt="Logo" width="80" height="80">
-  </a>
+ 
 
-  <h3 align="center">Best-README-Template</h3>
+  <h3 align="center">Lead Hunter</h3>
 
   <p align="center">
-    An awesome README template to jumpstart your projects!
+    An awesome Web Scraping Project
     <br />
-    <a href="https://github.com/GauravPoosarla/heavyTeam/"><strong>Explore the docs »</strong></a>
+    <a href="https://github.com/GauravPoosarla/heavyTeam/"><strong></strong></a>
     <br />
     <br />
     <a href="https://github.com/GauravPoosarla/heavyTeam/">View Demo</a>
