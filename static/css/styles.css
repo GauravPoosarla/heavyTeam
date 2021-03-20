@@ -63,9 +63,33 @@ button {
   font-weight: normal;
   font-size: 16px;
   line-height: 170%;
+  max-height: 64px;
 }
 .navbar-home {
   padding: auto 16px auto 16px;
   height: 80px;
   background: #ffffff !important;
+}
+
+.main-title {
+  font-family: "Space Grotesk";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 67px;
+  line-height: 130%;
+}
+.subtitle-home {
+  font-family: "Mulish";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 22px;
+  line-height: 150%;
+  color: #3a3a3c;
+}
+input {
+  border: 1px solid #dde5e9;
+  border-radius: 8px;
+  background: white;
+  padding: 20px 32px;
+  max-height: 64px;
 }
