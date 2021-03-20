@@ -1,9 +1,15 @@
-<html>
-    <head>
-        <title> </title>
-            <link rel = "stylesheet" type ="text/css" href="{{url_for('static', filename='styles.css')}}">
-    </head>
-    <body>
-        <h1>holla</h1>
-    </body>
-</html>
+{% extends "base.html" %} {% block head %}
+<title>Info Scrapper</title>
+{% endblock %} {% block body %}
+<div class="home">
+  <div
+    class="navbar-home d-flex justify-content-between align-items-center p-1"
+  >
+    <div class="d-flex justify-content-center align-items-center">
+      <img src="../static/logo.png" alt="logo" />
+      <h5>Info Scrapper</h5>
+    </div>
+    <button>Get Started</button>
+  </div>
+</div>
+{% endblock %}
