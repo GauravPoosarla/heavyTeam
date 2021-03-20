@@ -1,5 +1,5 @@
 {% extends "base.html" %} {% block head %}
-<title>Info Scrapper</title>
+<title>Lead Hunter</title>
 {% endblock %} {% block body %}
 <div class="home">
   <img
@@ -9,8 +9,8 @@
       position: absolute;
       width: 145px;
       height: 145px;
-      left: 5px;
-      top: 123px;
+      left: 0px;
+      top: 125px;
     "
   />
   <img
@@ -23,11 +23,11 @@
   >
     <div class="d-flex justify-content-center align-items-center">
       <img src="../static/logo.png" alt="logo" />
-      <h5>Info Scrapper</h5>
+      <h5>Lead Hunter</h5>
     </div>
     <a href="{{ url_for("companies")}}" ><button>Get Started</button></a>
   </div>
-  <div class="d-flex justify-content-between align-items-end container">
+  <div class="d-flex justify-content-between align-items-center container">
     <div class="d-flex flex-column">
       <div class="main-title m-3">
         Generate leads <br />
@@ -39,7 +39,7 @@
       </div>
       <div class="d-flex justify-content-center align-items-center m-3">
         <input type="search" placeholder="Search for companies" class="m-2" />
-        <a href="{{ url_for("companies")}}" > <button>Get Started</button></a>
+        <a href="{{ url_for("companies")}}" > <button class="button-shadow">Get Started</button></a>
       </div>
     </div>
     <div><img src="../static/mainPageIllustration.png" alt="" /></div>

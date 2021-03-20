@@ -65,7 +65,12 @@ button {
   font-size: 16px;
   line-height: 170%;
   max-height: 64px;
+}
+.button-shadow {
   filter: drop-shadow(0px 4px 10px rgba(0, 84, 255, 0.24));
+}
+button:hover {
+  background: #003194;
 }
 .navbar-home {
   padding: auto 16px auto 16px;
@@ -94,4 +99,14 @@ input {
   background: white;
   padding: 20px 32px;
   max-height: 64px;
+  min-width: 300px;
+}
+
+.dropdown-item {
+  font-family: "Mulish";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 170%;
+  color: #6b7588;
 }
