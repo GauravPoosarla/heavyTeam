@@ -110,3 +110,16 @@ input {
   line-height: 170%;
   color: #6b7588;
 }
+
+
+.content-body{
+  background: #F2F2F5;
+  display: flex;
+}
+
+.edit-icon{
+  color:black;
+  size: 0.5rem;
+  padding: 0.6rem;
+}
+
