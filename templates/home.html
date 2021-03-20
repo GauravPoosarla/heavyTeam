@@ -2,6 +2,22 @@
 <title>Info Scrapper</title>
 {% endblock %} {% block body %}
 <div class="home">
+  <img
+    src="../static/dotsLeft.png"
+    alt=""
+    style="
+      position: absolute;
+      width: 145px;
+      height: 145px;
+      left: 5px;
+      top: 123px;
+    "
+  />
+  <img
+    src="../static/dotsRight.png"
+    alt=""
+    style="position: absolute; right: 0px; top: 250px"
+  />
   <div
     class="navbar-home d-flex justify-content-between align-items-center p-1"
   >
@@ -10,6 +26,23 @@
       <h5>Info Scrapper</h5>
     </div>
     <button>Get Started</button>
+  </div>
+  <div class="d-flex justify-content-between align-items-end container">
+    <div class="d-flex flex-column">
+      <div class="main-title">
+        Generate leads <br />
+        at lightning <br />
+        speed ⚡
+      </div>
+      <div class="subtitle-home">
+        Connect with people that matter in just seconds.
+      </div>
+      <div class="d-flex justify-content-center align-items-center">
+        <input type="search" placeholder="Search for companies" class="m-2" />
+        <button>Get Started</button>
+      </div>
+    </div>
+    <div><img src="../static/mainPageIllustration.png" alt="" /></div>
   </div>
 </div>
 {% endblock %}
