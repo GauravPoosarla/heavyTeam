@@ -93,3 +93,16 @@ input {
   padding: 20px 32px;
   max-height: 64px;
 }
+
+
+.content-body{
+  background: #F2F2F5;
+  display: flex;
+}
+
+.edit-icon{
+  color:black;
+  size: 0.5rem;
+  padding: 0.6rem;
+}
+
