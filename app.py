@@ -20,12 +20,14 @@ class employeeform(FlaskForm):
 app = Flask(__name__)
 
 app.config['SEND_FILE_MAX_AGE_DEFAULT'] = 0
+app.config['SECRET_KEY'] = 'any secret string'
 
 
 
 @app.route("/") 
 def home():
     return render_template("home.html")
+
 
 @app.route("/companyinfo", methods=['GET', 'POST'])
 def companyinfo():
