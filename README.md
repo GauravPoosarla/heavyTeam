@@ -20,7 +20,6 @@
 [![Stargazers][stars-shield]][stars-url]
 [![Issues][issues-shield]][issues-url]
 [![MIT License][license-shield]][license-url]
-[![LinkedIn][linkedin-shield]][linkedin-url]
 
 
 
@@ -101,40 +100,6 @@ This section should list any major frameworks that you built your project using.
 This is an example of how to list things you need to use the software and how to install them.
 * python
 
-  ```sh
-  npm install npm@latest -g
-  ```
-
-### Installation
-
-
-1. Clone the repo
-   ```sh
-   git clone https://github.com/your_username_/Project-Name.git
-   ```
-2. Run the Requirements.txt file
-   ```sh
-   npm install
-   ```
-3. run app.py
-   ```JS
-   const API_KEY = 'ENTER YOUR API';
-   ```
-
-
-
-<!-- USAGE EXAMPLES -->
-## Usage
- can be used to require information of potential decision makers and save applicants the trouble of finding information
-
-_For more examples, please refer to the [Documentation](https://example.com)_
-
-
-
-<!-- ROADMAP -->
-## Roadmap
-
-See the [open issues](https://github.com/othneildrew/Best-README-Template/issues) for a list of proposed features (and known issues).
 
 
 
@@ -163,7 +128,7 @@ Distributed under the MIT License. See `LICENSE` for more information.
 
 Your Name - [@your_twitter](https://twitter.com/your_username) - email@example.com
 
-Project Link: [https://github.com/your_username/repo_name](https://github.com/your_username/repo_name)
+Project Link: [https://github.com/your_username/heavyTeam](https://github.com/your_username/heavyTeam)
 
 
 
