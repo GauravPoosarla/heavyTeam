@@ -3,7 +3,9 @@ from flask_wtf import FlaskForm
 from wtforms import StringField,  SubmitField, SelectField
 from wtforms.validators import DataRequired, Email, EqualTo
 from wtforms.validators import ValidationError
+import ./src/main.py
 
+data = {}
 class Companyform(FlaskForm):
 
     companyname = StringField('Company Name', validators=[DataRequired()])
@@ -33,9 +35,11 @@ def home():
 def companyinfo():
     form = Companyform()
     if form.validate_on_submit():
-        session['companyname'] = form.companyname.data
-        session['country'] = form.country.data
-        session['category'] = form.category.data
+        companyname = form.companyname.data
+        country = form.country.data
+        category = form.category.data
+        data = get_emails(companyname, 5, 'en')
+        print(data)
 
     return render_template('companyinfo.html', form = form)
 
