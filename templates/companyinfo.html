@@ -47,35 +47,20 @@
               filter: drop-shadow(0px 4px 10px rgba(43, 43, 43, 0.24));
             "
           >
-            <li><a class="dropdown-item" href="#">✈ Aviation</a></li>
-            <li><a class="dropdown-item" href="#">🌐 Comuter Networks</a></li>
-            <li><a class="dropdown-item" href="#">👗 Fashion</a></li>
-            <li><a class="dropdown-item" href="#">🚀 Aerospace</a></li>
           </ul>
         </div>
       </div>
     </div>
   </form>
     <table class="table table-striped">
-      <tr>
-        <th>Firstname</th>
-        <th>Lastname</th>
-        <th>Age</th>
-        <th></th>
-      </tr>
-      <tr>
-        <td>Jill</td>
-        <td>Smith</td>
-        <td>50</td>
-        <td><a href="{{ url_for("employeeinfo")}}" > <button class="button-sutle">Get info</button></a></td>
-      </tr>
-      <tr>
-        <td>Eve</td>
-        <td>Jackson</td>
-        <td>94</td>
-        <td><a href="{{ url_for("employeeinfo")}}" > <button class="button-sutle">Get info</button></a></td>
+      {{for email in data['data']['emails']}}
+      <tr
+        <th>{{email['first_name']}}</th>
+        <th>{{email['last_name']}}</th>
+        <th>confidence</th>
       </tr>
     </table>
   </div>
 </div>
+<!-- <td><a href="{{ url_for("employeeinfo")}}" > <button class="button-sutle">Get info</button></a></td> -->
 {% endblock %}
