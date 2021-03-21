@@ -3,7 +3,7 @@ from flask_wtf import FlaskForm
 from wtforms import StringField,  SubmitField, SelectField
 from wtforms.validators import DataRequired, Email, EqualTo
 from wtforms.validators import ValidationError
-import ./src/main.py
+import 'heavyTeam\src\main.py'
 
 data = {}
 class Companyform(FlaskForm):
@@ -39,9 +39,9 @@ def companyinfo():
         country = form.country.data
         category = form.category.data
         data = get_emails(companyname, 5, 'en')
-        print(data)
+        
 
-    return render_template('companyinfo.html', form = form)
+    return render_template('companyinfo.html', form = form, data = data)
 
 @app.route("/employeeinfo", methods=['GET', 'POST'])   
 def employeeinfo():
