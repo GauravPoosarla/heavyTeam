@@ -3,7 +3,9 @@ from flask_wtf import FlaskForm
 from wtforms import StringField,  SubmitField, SelectField
 from wtforms.validators import DataRequired, Email, EqualTo
 from wtforms.validators import ValidationError
+import 'heavyTeam\src\main.py'
 
+data = {}
 class Companyform(FlaskForm):
 
     companyname = StringField('Company Name', validators=[DataRequired()])
@@ -20,6 +22,7 @@ class employeeform(FlaskForm):
 app = Flask(__name__)
 
 app.config['SEND_FILE_MAX_AGE_DEFAULT'] = 0
+app.config['SECRET_KEY'] = 'any secret string'
 
 
 
@@ -27,15 +30,18 @@ app.config['SEND_FILE_MAX_AGE_DEFAULT'] = 0
 def home():
     return render_template("home.html")
 
+
 @app.route("/companyinfo", methods=['GET', 'POST'])
 def companyinfo():
     form = Companyform()
     if form.validate_on_submit():
-        session['companyname'] = form.companyname.data
-        session['country'] = form.country.data
-        session['category'] = form.category.data
+        companyname = form.companyname.data
+        country = form.country.data
+        category = form.category.data
+        data = get_emails(companyname, 5, 'en')
+        
 
-    return render_template('companyinfo.html', form = form)
+    return render_template('companyinfo.html', form = form, data = data)
 
 @app.route("/employeeinfo", methods=['GET', 'POST'])   
 def employeeinfo():
