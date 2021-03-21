@@ -3,7 +3,7 @@ from flask_wtf import FlaskForm
 from wtforms import StringField,  SubmitField, SelectField
 from wtforms.validators import DataRequired, Email, EqualTo
 from wtforms.validators import ValidationError
-import 'heavyTeam\src\main.py'
+import main
 
 
 data = {}
@@ -42,7 +42,7 @@ def companyinfo():
         companyname = form.companyname.data
         country = form.country.data
         category = form.category.data
-        data = get_emails(companyname, 5, 'en')
+        data = main.get_emails(companyname, 5, 'en')
         
 
 
@@ -55,7 +55,7 @@ def employeeinfo():
         empname = form.empname.data
         empdesign = form.empdesign.data
 
-    return render_template('employeeinfo.html', form=form)
+    return render_template('employeeinfo.html', form=form,data=main.get_emails("dell", 5, 'en'))
 
 
 if __name__ == "__main__":
