@@ -1,45 +1,47 @@
 {% extends "base.html" %} {% block head %}
-<title>Info Scrapper</title>
+<title>Leads</title>
 {% endblock %} {% block body %}
-<div
+<div class="companies">
+  <!-- /*navbar*/ -->
+  <div
     class="navbar-home d-flex justify-content-between align-items-center p-1"
   >
     <div class="d-flex justify-content-center align-items-center">
-      <ion-icon name="chevron-back-outline" class="edit-icon"></ion-icon>
+      <a href="{{ url_for("companyinfo")}}"><ion-icon
+        name="chevron-back-outline"
+        style="color: black; font-size: 36px"
+      ></ion-icon></a>
       <img src="../static/logo.png" alt="logo" />
-      <h5>Info Scrapper</h5>
+      <h5>Lead Hunter</h5>
     </div>
-    <button class="add-padding">Get Started</button>
- </div>
- <div class="content-body">
-   <div class="container">
-  <div class="input-group">
-    <div class="form-outline">
-      <input type="search" id="form1" class="form-control" />
-      <label class="form-label" for="form1">Search</label>
+    <h3>Company Name</h3>
+    <img src="../static/Initials.png" alt="" width="46" />
+  </div>
+  <!-- navbar complete -->
+  <!-- main container -->
+  <div class="container" style="padding: 24px">
+    <div class="d-flex justify-content-center align-items-center m-3">
+      <input type="search" placeholder="Search for employees" class="m-2" />
+      <button><ion-icon name="search"></ion-icon></button>
     </div>
-    <button type="button" class="btn btn-primary">
-      <ion-icon name="search-outline"></ion-icon>
-    </button>
+    <!-- main container -->
+    <div class="d-flex flex-wrap">
+      <div class="custom-card">
+        <div class="name-designation">
+          <img src="../static/Initials.png" alt="" width="48">
+          <div class="lead-para">Hayat Tamboli</div>
+          <div style="
+          font-size: 18px;
+          line-height: 170%;">CEO</div>
+        </div>
+        <div class="contact-info">
+          <div class="d-flex justify-content-center align-items-center" style="color: #8F90A6;font-size: 18px"><ion-icon class="p-2" name="mail-outline"></ion-icon>hayat.tamboli@gmail.com</div>
+          <div class="d-flex justify-content-center align-items-center" style="color: #8F90A6;font-size: 18px"><ion-icon class="p-2" name="call-outline"></ion-icon>+91 7887 537 943</div>
+          <div class="d-flex justify-content-center align-items-center" style="color: #8F90A6;font-size: 18px"><ion-icon class="p-2" name="logo-linkedin"></ion-icon><a href="#">/hayattamboli</a></div>
+        </div>
+        <div><a href="mailto:hayat.tamboli@gmail.com"><button>Send Email</button></a></div>
+      </div>
+    </div>
   </div>
-  </div>
- </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+</div>
 {% endblock %}
