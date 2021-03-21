@@ -77,8 +77,6 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-[![Product Name Screen Shot][product-screenshot]](https://example.com)
-
 We are searching through websites like linkedln and the company's official page and scraping information of company's high ranked employees . We are taking company name, country and department as input and scraping on basis of these fields.  
 
 ### Built With
@@ -99,8 +97,6 @@ This section should list any major frameworks that you built your project using.
 
 This is an example of how to list things you need to use the software and how to install them.
 * python
-
-
 
 
 <!-- CONTRIBUTING -->
@@ -125,8 +121,6 @@ Distributed under the MIT License. See `LICENSE` for more information.
 
 <!-- CONTACT -->
 ## Contact
-
-Your Name - [@your_twitter](https://twitter.com/your_username) - email@example.com
 
 Project Link: [https://github.com/your_username/heavyTeam](https://github.com/your_username/heavyTeam)
 
