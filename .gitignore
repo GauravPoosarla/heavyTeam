@@ -151,5 +151,5 @@ Thumbs.db #thumbnail cache on Windows
 # profiling data
 .prof
 
-
+config.py
 # End of https://www.toptal.com/developers/gitignore/api/flask
